@@ -33,8 +33,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		// authentication using embedded database H2
 		
 		
-		auth.inMemoryAuthentication().withUser("akshat")
-        .password("akshat")
+		auth.inMemoryAuthentication().withUser("ram")
+        .password("ram")
         .roles("USER")
         .and()
         .withUser("admin")
