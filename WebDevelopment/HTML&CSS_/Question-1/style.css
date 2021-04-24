@@ -1,0 +1,190 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	background: #e7e7e7;
+	text-align: center;
+}
+
+h1,
+h3 {
+	font-family: "Russo One", sans-serif;
+	color: #ffffff;
+	filter: drop-shadow(3px 5px 4px black);
+}
+
+h3 {
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin-bottom: 12px;
+}
+
+p,
+ul {
+	font-family: "Pacifico", cursive;
+}
+
+a {
+	color: #006faf;
+}
+
+header {
+	padding: 60px 60px 20px 60px;
+	background: #1de05e;
+}
+
+header #title {
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+
+header #subtitle {
+	font-size: 25px;
+	color: #494949;
+}
+
+#img-div {
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin: 0px 30px;
+	padding: 40px 0px;
+}
+
+#image {
+	max-width: 80%;
+	border-radius: 15px;
+	display: block;
+	margin: auto;
+}
+
+#img-caption {
+	font-size: 16px;
+	color: #555454;
+}
+
+#tribute-info {
+	width: 80%;
+	margin: 10px auto;
+	background: #1de05e;
+	padding: 10px 50px;
+	border-radius: 10px;
+}
+
+#timeline-ul {
+	margin: 20px;
+	text-align: start;
+}
+
+#timeline-ul li {
+	font-size: 16px;
+	color: #292929;
+	word-spacing: 2px;
+	line-height: 2em;
+}
+
+#timeline-ul li:hover {
+	font-size: 25px;
+	cursor: pointer;
+	color: #ffffff;
+	transition: font-size 0.3s ease;
+}
+
+#movie-div {
+	margin: 60px auto;
+}
+
+#embed_movie {
+	width: 70%;
+	height: 90vh;
+}
+
+#quote-div p {
+	font-size: 25px;
+	color: #494949;
+}
+
+#movie-div h3,
+#quote-div h3 {
+	color: #1de05e;
+}
+
+#more-reading {
+	margin-top: 60px;
+	padding: 20px;
+	background: #1de05e;
+}
+
+#more-reading p {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#heart {
+	width: 25px;
+	height: 25px;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+	header #title {
+		font-size: 30px;
+	}
+
+	header #subtitle {
+		font-size: 18px;
+	}
+
+	#image {
+		max-width: 100%;
+		border-radius: 10px;
+	}
+
+	#img-caption {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	#timeline-ul {
+		margin: 10px 5px;
+	}
+
+	#timeline-ul li {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	#tribute-info {
+		width: 90%;
+		margin: 5px auto;
+		padding: 20px 30px;
+	}
+
+	#timeline-ul li:hover {
+		font-size: 20px;
+	}
+
+	#embed_movie {
+		width: 90%;
+		height: 50vh;
+	}
+
+	#quotes {
+		font-size: 18px;
+		margin: auto 10px;
+	}
+
+	#more-reading p {
+		font-size: 16px;
+		color: #ffffff;
+		margin: auto 10px;
+	}
+}

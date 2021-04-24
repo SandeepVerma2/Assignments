@@ -1,0 +1,10 @@
+body {
+    background-color: rebeccapurple;
+}
+
+table.a td{
+    font-size: large;
+    border-style: solid;
+    text-align: center;
+    
+}

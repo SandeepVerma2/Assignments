@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+		<div class="header">
+			<div class="logo">&nbsp;</div>
+		</div>
+		<div class="body">
+			<form>
+			<h1 style="text-align:center;font-size:5 rem">Form</h1>
+				<ul>
+					<li>			
+						<label for="customer.title">Title</label>
+						<select id="customer.title" name="customer.title">
+							<option value="" selected="selected">------ Select ------</option>
+							<option value="Mr">Mr</option>
+							<option value="Mrs">Mrs</option>
+							<option value="Miss">Miss</option>
+							<option value="Ms">Ms</option>
+							<option value="Dr">Dr</option>
+							<option value="Sir">Sir</option>
+						</select>
+					</li>
+					<li>
+						<label>Short description<span class="mandatory">*</span></label>
+						<input id="description" name="description" type="text" />
+					</li>
+					<li>
+						<label>Long error message</label>
+
+					</li>
+					<li>
+						<label for="phone">Phone number</label>
+						<span class="stack">
+							<input id="phone" name="phone" class="error" type="text" />
+						</span>
+					</li>
+					<li>
+						<label>Date</label>
+							<span class="inline">
+								<span class="stack field-set">
+									<input id="day" class="field1of6" name="day" type="text" maxlength="2" />
+									<label class="tag text-small centre" style="min-width: 2.62em">Day</label>
+								</span>
+								<label class="sep">/</label>
+								<span class="stack">
+									<input id="month" class="field1of6" name="month" type="text" maxlength="2" />
+									<label class="tag text-small centre">Month</label>
+								</span>
+								<label class="sep">/</label>
+								<span class="stack">
+									<input id="year" class="field1of6" name="year" type="text" maxlength="4" />
+									<label class="tag text-small centre">Year</label>
+								</span>
+							</span>
+					</li>
+					<li>
+						<label>Name</label>
+						<span class="inline wrap">
+							<span class="inline field-set remainder-set">
+								<span class="stack">
+									<input id="firstName" class="field1of2" name="firstName" type="text" size="20"/>
+									<label class="tag">First name</label>
+								</span>
+								<span class="stack">
+									<input id="lastName" class="field1of2"  name="lastName" type="text" size="25"/>
+									<label class="tag">Last name</label>
+								</span>
+							</span>
+						</span>
+					</li>
+					<li>
+						<label>Choice</label>
+						<span class="inline">
+							<input id="c1" name="c1" type="radio" />
+							<label for="c1" class="choice">Inbound</label>
+						</span>
+						<span class="inline">
+							<input id="c2" name="c2" type="radio" />
+							<label for="c2" class="choice">Outbound</label>
+						</span>
+						<span class="inline">
+							<input id="c3" name="c3" type="radio" />
+							<label for="c3" class="choice">Conference</label>
+						</span>
+					</li>
+					<li>
+						<span class="title-width inline">
+							<input id="r3" name="r3" type="radio" />
+							<label for="r3" class="choice wide-only">Pay with Credit or Debit Card</label>
+							<span class="set-height">
+								<span class="payment-icon vs-icon">&nbsp;</span>
+								<span class="payment-icon mc-icon">&nbsp;</span>
+								<span class="payment-icon ax-icon">&nbsp;</span>
+								<span class="payment-icon dn-icon">&nbsp;</span>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span class="title-width inline" >
+							<input id="c4" class="remainder-set"  name="c4" type="checkbox"/>
+							<label id="l4" for="c4" class="instruct ">
+								Have you check the identity of the person, there phone details 
+								and what times they are available to return call? 
+							 </label>
+						</span>
+					</li>
+					<li>
+						<label>Check</label>
+						<input id="c4"  name="c4" type="checkbox"/>
+						<label for="c1" class="choice">One</label>
+						<input id="c4" name="c4" type="checkbox"/>
+						<label for="c1" class="choice">Two</label>
+					</li>
+					<li>
+						<label>Description</label>
+						<textarea id="input_6" class="form-textarea" name="q6_notes" rows="6"></textarea>
+					</li>
+					<li>
+						<span class="title-width"><a href="#" class="button">Button</a></span>
+					</li>
+				</ul>
+			</form>
+			</div>
+   		</div>
+</body>
+</html>

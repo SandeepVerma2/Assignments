@@ -1,0 +1,16 @@
+body{
+
+    font: 15px/1.5, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+
+}
+
+h1 {
+    background-color: red;
+}
+
+p {
+    background-color: green;
+}
