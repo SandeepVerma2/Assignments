@@ -1,4 +1,4 @@
-package com.capgemini.SpringSecurity;
+package io.javabrains.springsecurityjdbc;
 
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -30,15 +31,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		
-		// authentication using embedded database H2
-		
 		
 		auth.inMemoryAuthentication().withUser("akshat")
-        .password("akshat")
+		.password("akshat")
         .roles("USER")
         .and()
         .withUser("admin")
-        .password("admin")
+        .password("$2a$09$9lq11vs9kR8HRp7cdRjCQuVNatbxcKCDd5bgS.HIh/jgh/7o5QM/q")
         .roles("ADMIN");
 		//auth.userDetailsService(userDetailsService);
 	}
@@ -65,7 +64,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Bean
 	public PasswordEncoder getEncoder() {
 		
-		return NoOpPasswordEncoder.getInstance();
+		return new BCryptPasswordEncoder();
 	}
 	
 	
